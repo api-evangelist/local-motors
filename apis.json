@@ -1,0 +1,63 @@
+{
+    "name": "Local Motors",
+    "description": "Local Motors is a ground mobility company focused on shaping the future for the better. Founded in 2007 with a belief in open collaboration and co-creation, Local Motors began low volume vehicle manufacturing of open-source designs using multiple micro...",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18715-local-motors.jpg",
+    "tags": [
+        "api provider",
+        "automobiles",
+        "have api",
+        "internet of things",
+        "manufacturing"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/local-motors\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Local Motors",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18715-local-motors.jpg",
+            "humanURL": "https:\/\/localmotors.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/local-motors-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/localmotors.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/localmotors.com\/blog\/rss\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/local-motors"
+        },
+        {
+            "type": "Email",
+            "url": "ollidemo@localmotors.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/localmotors"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/localmotors"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/localmotors.com\/"
+        }
+    ]
+}
