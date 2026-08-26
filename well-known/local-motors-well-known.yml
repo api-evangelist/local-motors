@@ -1,0 +1,265 @@
+generated: '2026-08-25'
+method: probed
+source: https://localmotors.com/
+name: Local Motors well-known + contract discovery probe
+description: >-
+  Negative probe record for Local Motors. Local Motors Inc. (Phoenix, Arizona) ceased
+  operations in January 2022 after 15 years, and its intellectual-property portfolio —
+  including the 3D-printed autonomous Olli shuttle — was acquired by RapidFlight
+  (Manassas, Virginia) in July 2023. The localmotors.com domain is no longer operated by
+  the company: it now answers HTTP 301 on EVERY path, including every /.well-known/* and
+  every spec path, redirecting to a third-party affiliate content article at
+  housegrail.com -> homegrail.com. NONE of these responses is a document served by Local
+  Motors. No WellKnown, SecurityTxt, AgentCard, LLMsTxt, OpenAPI or MCPServer pointer is
+  emitted from this probe, and none should ever be emitted from it in a later round.
+
+host_status:
+  host: localmotors.com
+  controlled_by_provider: false
+  disposition: repurposed-redirect
+  registrar: GoDaddy.com, LLC
+  registrant_organization: Domains By Proxy, LLC
+  domain_created: '2005-04-02'
+  domain_updated: '2026-03-26'
+  domain_expires: '2027-04-02'
+  nameservers:
+  - chad.ns.cloudflare.com
+  - dell.ns.cloudflare.com
+  redirect_target: https://housegrail.com/what-was-local-motors-and-the-3d-printed-olli-shuttle/
+  redirect_final: https://homegrail.com/what-was-local-motors-and-the-3d-printed-olli-shuttle/
+  note: >-
+    The registration is now privacy-shielded and delegated to Cloudflare, and the origin
+    serves a blanket 301 to housegrail.com, which itself 301s to homegrail.com — a
+    NameCheap privacy-registered affiliate content network (housegrail.com created
+    2021-07-13, homegrail.com created 2018-12-03) publishing a retrospective article
+    titled "What was Local Motors and the 3D printed Olli shuttle". It is NOT a Local
+    Motors property and nothing served from it may be attributed to the company.
+
+blanket_301_catch_all: true
+blanket_301_note: >-
+  Every probed path returned HTTP 301 with the identical Location header pointing at the
+  same third-party article. Treat all of them as misses. There is no origin content on
+  this host at all.
+
+hosts:
+- host: localmotors.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+
+contract_discovery:
+  openapi:
+  - url: https://localmotors.com/openapi.json
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/openapi.yaml
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/swagger.json
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/v1/openapi.json
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/api-docs
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/docs
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  - url: https://localmotors.com/redoc
+    status: 301
+    parses_as_openapi: false
+    result: miss
+  graphql:
+  - url: https://localmotors.com/graphql
+    status: 301
+    result: miss
+    note: 301 to the third-party article; no GraphQL endpoint. Introspection not attempted.
+  mcp: []
+  mcp_note: >-
+    No hosted or stdio MCP server exists. The company shut down in January 2022, more than
+    two years before the Model Context Protocol was published, and no successor publishes
+    one under the Local Motors name. No mcp/ artifact is written and no MCPServer pointer
+    is emitted.
+  a2a_agent_card:
+  - url: https://localmotors.com/.well-known/agent-card.json
+    status: 301
+    result: miss
+  - url: https://localmotors.com/.well-known/agent.json
+    status: 301
+    result: miss
+    note: Legacy pre-0.3 path. 301, no JSON object, no AgentCard shape. No AgentCard pointer emitted.
+  wsdl: []
+  wsdl_note: No ?wsdl / ?singleWsdl surface to probe — there is no live host.
+  grpc: []
+  grpc_note: No .proto published in the GitHub organization (zero public repositories) or on buf.build.
+  api_hosts_resolved:
+  - host: api.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: docs.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: developer.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: developers.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: dev.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: app.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: portal.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: forum.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: launch.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: olli.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: community.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: status.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: support.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: help.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: my.localmotors.com
+    dns: NXDOMAIN
+    status: null
+  - host: store.localmotors.com
+    dns: NXDOMAIN
+    status: null
+
+llms_txt:
+  url: https://localmotors.com/llms.txt
+  status: 301
+  is_real_llms_txt: false
+  result: miss
+  note: >-
+    Redirects off-host like every other path. No llms.txt is generated for this repo either:
+    there is no live surface for an agent to be pointed at.
+
+sitemap:
+  url: https://localmotors.com/sitemap.xml
+  status: 301
+  result: miss
+
+historical:
+  method: searched
+  source: http://web.archive.org/cdx/search/cdx?url=localmotors.com/api*
+  finding: >-
+    The Internet Archive CDX index shows that localmotors.com once served an internal
+    django-tastypie style JSON API under /api/v1/ — resources including /api/v1/content/,
+    /api/v1/blog_post/, /api/v1/category_counts/, /api/v1/cart_item/ and
+    /api/v1/user/login/, with tastypie query conventions (order_by, limit, offset). This
+    was the AJAX backend of the Local Motors co-creation community website, not a published
+    developer product: the archive holds NO /developer*, NO /docs*, and no crawl of any
+    openapi/swagger path on the domain in its entire history. Snapshots taken from 2022-09
+    onward record 301 on these paths, matching the current blanket redirect.
+  developer_portal_ever_published: false
+  crawls:
+  - url: https://localmotors.com/api/v1/category_counts/?container=all&order_by=-score
+    status: 200
+    timestamp: '20150304174044'
+  - url: https://localmotors.com/api/v1/content/?order_by=-updated&limit=10&offset=10
+    status: 301
+    timestamp: '20220924184059'
+  - url: https://localmotors.com/api/v1/blog_post/?order_by=-created&status=P&limit=20
+    status: 301
+    timestamp: '20240916194136'
+
+other_surfaces:
+- what: GitHub organization
+  url: https://api.github.com/orgs/localmotors
+  status: 200
+  result: present-but-empty
+  note: >-
+    github.com/localmotors is a real organization named "Local Motors", created 2013-02-17,
+    last updated 2020-04-27, located San Francisco CA, with blog https://www.launchforth.io.
+    It has ZERO public repositories and zero public gists, so it publishes no spec, SDK or
+    .proto. Wired as a GitHubOrganization pointer because the org itself is genuine and live.
+- what: Launch Forth (launchforth.io)
+  url: https://launchforth.io/
+  status: 200
+  result: different-company
+  note: >-
+    The Local Motors GitHub organization lists launchforth.io as its blog. Launch Forth is
+    the co-creation/crowdsourcing platform that was spun out of the Local Motors community
+    and operates as a SEPARATE company on its own domain (GoDaddy nameservers, AWS-hosted).
+    It is deliberately NOT wired as a Local Motors property and nothing on it is attributed
+    to Local Motors here.
+- what: npm registry search "localmotors"
+  url: https://registry.npmjs.org/-/v1/search?text=localmotors
+  status: 200
+  result: miss
+  note: Zero results. No first-party JavaScript client library was ever published.
+- what: PyPI "localmotors" / "local-motors"
+  url: https://pypi.org/pypi/localmotors/json
+  status: 404
+  result: miss
+- what: PyPI "olli"
+  url: https://pypi.org/pypi/olli/json
+  status: 200
+  result: miss
+  note: >-
+    PyPI `olli` 2.0.0 is Python Discord's Loki log relay (python-discord.github.io/olli).
+    Unrelated to the Local Motors Olli shuttle. No first-party package exists.
+- what: Forge Global secondary-market listing (the harvest source)
+  url: https://forgeglobal.com/local-motors_stock/
+  status: 403
+  result: blocked
+  note: >-
+    Forge answers 403 with a Cloudflare "Just a moment..." challenge to non-browser clients.
+    The page exists; it is a secondary-market share listing venue, not a Local Motors site.
+    Recorded here because roadmap#56 tracks venue-listing-as-Website across the harvest
+    backlog and this repo is one of that cohort.
+
+conclusion: >-
+  Local Motors has no API surface to enrich and no host it still controls. The company is
+  defunct, its domain has been repurposed by an unrelated affiliate content operator, every
+  developer-shaped subdomain is NXDOMAIN, its GitHub organization is empty, and no registry
+  carries a first-party package. This is a historical record, not a thin profile. Any future
+  round should re-read host_status before probing localmotors.com again — a 200 from that
+  host belongs to homegrail.com, not to Local Motors.

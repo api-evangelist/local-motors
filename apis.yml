@@ -1,17 +1,72 @@
 aid: local-motors
 name: Local Motors
-description: 'Local Motors is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Local Motors was an American vehicle manufacturer founded in 2007 by John "Jay" Rogers Jr.
+  that built vehicles through open co-creation and distributed "microfactories" rather than
+  conventional mass production. Its community designed and the company produced the Rally
+  Fighter off-road car from its first Chandler, Arizona microfactory, the Strati — the first
+  car to be 3D-printed live, in 44 hours at IMTS 2014 — and, from 2016, Olli, a 3D-printed
+  electric autonomous shuttle whose conversational passenger interface ran on IBM Watson and
+  which was piloted at National Harbor, Maryland and other campus and transit sites. The
+  company operated microfactories in Chandler, Knoxville and National Harbor and spun its
+  crowdsourcing community out as Launch Forth. Local Motors ceased operations in January 2022
+  after fifteen years, having failed to raise further capital, and its intellectual-property
+  portfolio was acquired by drone manufacturer RapidFlight of Manassas, Virginia in July 2023.
+  Local Motors never operated a public developer program: the archive of localmotors.com holds
+  an internal django-tastypie JSON API under /api/v1/ that served the co-creation community
+  website, but no developer portal, API reference, SDK, or machine-readable specification was
+  ever published, and its GitHub organization has zero public repositories. The domain is no
+  longer the company's — it now answers HTTP 301 on every path to a third-party affiliate
+  article — so there is no live API surface to catalog. This profile is retained as a
+  historical record.
 url: https://raw.githubusercontent.com/api-evangelist/local-motors/refs/heads/main/apis.yml
+image: https://web.archive.org/web/20211113151329id_/https://localmotors.com/wp-content/themes/localmotors/dist/images/local-motors-favicon.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-founded: '2007'
+x-shutdown-date: '2022-01-13'
+x-shutdown-note: >-
+  Ceased operations in January 2022 after fifteen years for lack of funding, months after a
+  CEO transition to Vikrant Aggarwal and while Olli 2.0 pilots were still being announced.
+  The intellectual-property portfolio was acquired by RapidFlight in July 2023.
+x-domain-status: repurposed
+x-domain-note: >-
+  localmotors.com is still registered (created 2005-04-02, GoDaddy, privacy-shielded via
+  Domains By Proxy, updated 2026-03-26) but is delegated to Cloudflare and serves a blanket
+  HTTP 301 on EVERY path — including all /.well-known/* and every spec path — to
+  housegrail.com, which 301s on to homegrail.com, a NameCheap privacy-registered affiliate
+  content site publishing a retrospective article about the company. It is NOT a Local Motors
+  property and is deliberately not wired as a Website pointer. Every developer-shaped
+  subdomain (api., docs., developer., dev., app., portal., forum., launch., olli., community.,
+  status., support.) is NXDOMAIN. See well-known/local-motors-well-known.yml.
+specificationVersion: '0.23'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Defunct
+- Automotive
+- Manufacturing
+- Additive Manufacturing
+- 3D Printing
+- Autonomous Vehicles
+- Mobility
+- Transportation
+- Hardware
+tags_raw:
+- Company
+- Defunct
+- Automotive
+- Manufacturing
+- Additive Manufacturing
+- 3D Printing
+- Autonomous Vehicles
+- Mobility
+- Transportation
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,3 +76,50 @@ maintainers:
 common:
 - type: Website
   url: https://forgeglobal.com/local-motors_stock/
+- type: GitHubOrganization
+  url: https://github.com/localmotors
+x-pointer-checks:
+  checked: '2026-08-25'
+  results:
+  - url: https://forgeglobal.com/local-motors_stock/
+    status: 403
+    verdict: live
+    note: >-
+      Cloudflare "Just a moment..." interstitial to non-browser clients; the listing page
+      exists. It is a secondary-market share-listing venue, not a company site — the
+      roadmap#56 venue-listing-as-Website pattern, retained here for cohort consistency.
+  - url: https://github.com/localmotors
+    status: 200
+    verdict: live
+    note: >-
+      Real organization named "Local Motors", created 2013-02-17, blog launchforth.io.
+      Zero public repositories, so it publishes no spec, SDK or .proto.
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Local Motors shut down in January 2022 and its IP was sold to RapidFlight in July 2023;
+    localmotors.com is no longer the company's — it answers HTTP 301 on every path, including
+    /openapi.json and every /.well-known/ path, to a third-party affiliate article on
+    housegrail.com/homegrail.com — every developer subdomain is NXDOMAIN, its GitHub
+    organization has zero public repositories, and the Internet Archive records no developer
+    portal or machine-readable spec at any point in the domain's history.
+  evidence:
+  - url: https://localmotors.com/
+    status: 301
+  - url: https://localmotors.com/openapi.json
+    status: 301
+  - url: https://localmotors.com/llms.txt
+    status: 301
+  - url: https://localmotors.com/.well-known/agent-card.json
+    status: 301
+  - url: https://api.github.com/orgs/localmotors
+    status: 200
+  - url: https://forgeglobal.com/local-motors_stock/
+    status: 403
+  checked: '2026-08-25'
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
