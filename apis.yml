@@ -20,6 +20,17 @@ description: >-
   article — so there is no live API surface to catalog. This profile is retained as a
   historical record.
 url: https://raw.githubusercontent.com/api-evangelist/local-motors/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://web.archive.org/web/20211113151329id_/https://localmotors.com/wp-content/themes/localmotors/dist/images/local-motors-favicon.png
 x-type: company
 x-source: harvest:secondary-market
