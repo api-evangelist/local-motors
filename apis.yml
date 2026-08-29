@@ -20,6 +20,7 @@ description: >-
   article — so there is no live API surface to catalog. This profile is retained as a
   historical record.
 url: https://raw.githubusercontent.com/api-evangelist/local-motors/refs/heads/main/apis.yml
+x-harvest-source-url: https://forgeglobal.com/local-motors_stock/
 deliveryModel:
   model: unknown
   open_source: false
@@ -85,8 +86,6 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://forgeglobal.com/local-motors_stock/
 - type: GitHubOrganization
   url: https://github.com/localmotors
 x-pointer-checks:
