@@ -64,5 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Local Motors is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/local-motors_stock/
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
+Local Motors was an American vehicle manufacturer founded in 2007 by John "Jay" Rogers Jr. that built vehicles through open co-creation and distributed "microfactories" rather than conventional mass production. Its community designed and the company produced the Rally Fighter off-road car from its first Chandler, Arizona microfactory, the Strati — the first car to be 3D-printed live, in 44 hours at IMTS 2014 — and, from 2016, Olli, a 3D-printed electric autonomous shuttle whose conversational passenger interface ran on IBM Watson and which was piloted at National Harbor, Maryland and other campus and transit sites. The company operated microfactories in Chandler, Knoxville and National Harbor and spun its crowdsourcing community out as Launch Forth. Local Motors ceased operations in January 2022 after fifteen years, having failed to raise further capital, and its intellectual-property portfolio was acquired by drone manufacturer RapidFlight of Manassas, Virginia in July 2023. Local Motors never operated a public developer program: the archive of localmotors.com holds an internal django-tastypie JSON API under /api/v1/ that served the co-creation community website, but no developer portal, API reference, SDK, or machine-readable specification was ever published, and its GitHub organization has zero public repositories. The domain is no longer the company's — it now answers HTTP 301 on every path to a third-party affiliate article — so there is no live API surface to catalog. This profile is retained as a historical record.
+
+**Areas:** Company · Defunct · Automotive · Manufacturing · 3D Printing · Autonomous Vehicles · Mobility · Transportation · Hardware
+
+## Local Motors on APIs.io (historical record)
+
+Everything profiled for Local Motors is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/local-motors/](https://apis.io/providers/local-motors/)** — or go straight to one of the APIs or properties below.
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [GitHub](https://github.com/localmotors)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Local Motors: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/local-motors/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
